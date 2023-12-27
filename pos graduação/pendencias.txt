@@ -1,4 +1,4 @@
 coisas para resolver:
 
 documentos pendentes faculdade
-teste de git terminal
+teste de git 2
