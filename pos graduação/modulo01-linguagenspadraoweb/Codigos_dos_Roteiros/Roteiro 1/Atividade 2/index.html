@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Bootstrap e JavaScript</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css"/>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+
+          <div class="col-sm-8">
+              <div class="painel painel-azul">Primeiro painel.
+                <div class="row">
+                    <div class="col-md-5">
+                       <div class="painel painel-roxo">
+                        <p id="data_exibicao"></p>
+                        <button type="button" onclick="exibirData()">Clicar</button>
+                       </div>
+                    </div>
+
+                    <div class="col-md-7">
+                       <div class="painel painel-roxo">
+                        <p>Segundo quadro.</p>
+                        <script>alert('Olá Mundo!');</script>
+                       </div>   
+                    </div>
+                </div>
+              </div>
+            </div>     
+          
+          <div class="col-sm-4">
+             <div class="painel painel-azul">Segundo painel.
+               <input id="campotexto" type="text" placeholder="Algum texto!" disabled="disabled">
+             </div>
+          </div>
+          
+         </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
