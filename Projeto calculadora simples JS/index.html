@@ -15,13 +15,19 @@
 
 <div class="miniCalculadora">
 
-  
-    <div  id="limpar" > <input type="button" value="C" onclick="refresh()">
-
-<input id="dysplay"  type="text" readonly>
-   </div>
+  <div class="cima">
+          
+             <input type="button" value="CE" onclick="refresh()">
+             <input id="cl" type="button" value="CL" onclick="window.location.reload()">
+             
+<input  id="dysplay"  type="text" readonly
+   
+  </div> </div>
 
     <div class="botao">
+        
+        <!--propriedade value acrescenta o valor na tela apenas para leitura
+        propriedade onclick (quando cliacar) recebe o imput de append (função do js que pega o valor entre aspas e executa uma função (acrescentar ao dysplay) )-->
         <input type="button" value="1" onclick="append('1')">
         <input type="button" value="2" onclick="append('2')">
         <input type="button" value="3" onclick="append('3')">
@@ -41,11 +47,12 @@
         <input type="button" value="." onclick="append('.')">
         <input type="button" value="=" onclick="calculate()">
         <input type="button" value="+" onclick="append('+')">
+        
         <br>
        
     
     </div>
-
+</div>
 </div>
   
 </body>

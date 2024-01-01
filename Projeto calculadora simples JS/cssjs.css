@@ -1,19 +1,20 @@
 .miniCalculadora {background-color: aqua;  height: 290px; width: 300px; ; justify-content: center; border: solid; margin:100px; margin-top: 50px;}
 
-.botao{background-color: brown; display:flex; flex-direction:row ;width: 200px; justify-content: space-between; padding: 20px; margin: 20px;; justify-content: space-around; margin-top:0; display: flex; flex-wrap: wrap; border: solid;}
+.botao{background-color: brown; display:flex; flex-direction:row ;width: 200px; justify-content: space-between; padding: 20px; margin: 20px;; justify-content: space-around; margin-top:0; flex-wrap: wrap; border: solid;}
 
 
-input{margin: 9px; }
+input{margin: 10px }
 #CE:hover{background-color: yellow; color: black; height: 30px;}
 
 h1{ background-color:red; color: white; width: 270px; margin-left: 100px;padding-left: 30px;}
 
-button{height: 50px; width: 50px;font-weight: bolder;}
 
-#CE{height: 20px; background-color: blue;color: white;border-style: solid;border-color: white; border-radius: 10px; margin-left: 10px;}
-
-#limpar{margin-bottom: 30px; margin-left: 18px; margin-top: 15px; border-color: white; height: 20px;;;}
+.limpar{margin-bottom: 30px; margin-left: 18px; margin-top: 30px ; border-color: white; height: 20px; display: flex;}
 
 html{background-color: gray;}
 
-#dysplay {height: 20px;}
+#dysplay {height: 20px; width: 130px;}
+
+.cima{margin-left: 18px; }
+
+#cl{margin: 2px;}

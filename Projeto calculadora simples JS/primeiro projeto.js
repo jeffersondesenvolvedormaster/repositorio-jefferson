@@ -13,8 +13,8 @@ console.log (demonstrador)*/
 
 //console.log (demonstrar1)
 
-function append(value) {
-document.getElementById('dysplay').value += value;// acresenta o valor de dysplay ao dysplay
+function append(numeroAspas) {
+document.getElementById('dysplay').value += numeroAspas;// acresenta o valor de onclick ao dysplay
 }
 
 function calculate() {
@@ -23,12 +23,14 @@ let result = eval(expression); //faz a conta dos itens que constam e dysplay
 document.getElementById('dysplay').value = result; // acrescenta o resultado da variavel result no dysplay
 }
 
+//eu criei a função abaixo do zero somente com logica e abstração
 
 function refresh(){
 let deixa = document.getElementById('dysplay').value;//pega valor em dysplay
 let refresh = parseInt(deixa) - parseInt(deixa); //subtrai dysplay por ele mesmo
 let final = eval(refresh) //faz a operação acima
 document.getElementById('dysplay').value = final;}// acresenta o resultado no dysplay
+
 
 
 
