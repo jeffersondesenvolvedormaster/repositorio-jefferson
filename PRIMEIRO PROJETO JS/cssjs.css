@@ -1,9 +1,10 @@
 .miniCalculadora {background-color: aqua;  height: 290px; width: 300px; ; justify-content: center; border: solid; margin:100px; margin-top: 50px;}
 
-.botao{background-color: brown; display:flex; flex-direction:row ;width: 200px; justify-content: space-between; padding: 30px; margin: 18px;; justify-content: space-around; margin-top:0; display: flex; flex-wrap: wrap; border: solid;}
+.botao{background-color: brown; display:flex; flex-direction:row ;width: 200px; justify-content: space-between; padding: 20px; margin: 20px;; justify-content: space-around; margin-top:0; display: flex; flex-wrap: wrap; border: solid;}
 
 
-input{margin-left: 10px; font-weight: bold; border: solid 2px; height: 20px;}
+input{margin: 9px;}
+#CE:hover{background-color: yellow; color: black;}
 
 h1{ background-color:red; color: white; width: 270px; margin-left: 100px;padding-left: 30px;}
 

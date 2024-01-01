@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mini calculadora</title>
     <link rel="stylesheet" href="cssjs.css">
-   <script src="primeiro projeto.js"></script>
+  
 </head>
 <body>
 
@@ -15,18 +15,39 @@
 
 <div class="miniCalculadora">
 
-  <div class="demonstracao">
-<input  type="number" placeholder= "calculando..">
-  </div>
+  
+    <div  id="limpar" > <input type="button" value="C" onclick="clear()">
+
+<input  type="text" name="place" readonly>
+   </div>
 
     <div class="botao">
-    <div  id="botao1" onclick="demonstrar()"> 1 </div>
-    <div id="botao2"><b>2</b> </div>
-    <div id="botao4"> <b>4</b> </div>
-    <div id="botaosoma"><b>+</b> </div>
+        <input type="button" value="1" onclick="append('1')">
+        <input type="button" value="2" onclick="append('2')">
+        <input type="button" value="3" onclick="append('3')">
+        <input type="button" value="/" onclick="append('/')">
+        <br>
+        <input type="button" value="4" onclick="append('4')">
+        <input type="button" value="5" onclick="append('5')">
+        <input type="button" value="6" onclick="append('6')">
+        <input type="button" value="*" onclick="append('*')">
+        <br>
+        <input type="button" value="7" onclick="append('7')">
+        <input type="button" value="8" onclick="append('8')">
+        <input type="button" value="9" onclick="append('9')">
+        <input type="button" value="-" onclick="append('-')">
+        <br>
+        <input type="button" value="0" onclick="append('0')">
+        <input type="button" value="." onclick="append('.')">
+        <input type="button" value="=" onclick="calculate()">
+        <input type="button" value="+" onclick="append('+')">
+        <br>
+       
+    
     </div>
 
 </div>
   
 </body>
+<script src="primeiro projeto.js"></script>
 </html>
