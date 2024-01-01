@@ -50,6 +50,23 @@ let expression = document.getElementById('display').value;
 let result = eval(expression);
 document.getElementById('display').value = result;
 }
+
+
+<script>
+function append(value) {
+document.getElementById('display').value += value;
+}
+
+function clear() {
+document.getElementById('display').value = '';
+}
+
+function calculate() {
+let expression = document.getElementById('display').value;
+let result = eval(expression);
+document.getElementById('display').value = result;
+}
 </script>
+
 </body>
 </html>

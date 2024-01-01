@@ -13,3 +13,5 @@ button{height: 50px; width: 50px;font-weight: bolder;}
 #CE{height: 20px; background-color: blue;color: white;border-style: solid;border-color: white; border-radius: 10px; margin-left: 10px;}
 
 #limpar{margin: 15px; margin-left: 18px; border-color: white; ;}
+
+input[type="button"]
