@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 04 guanabara</title>
+</head>
+<body>
+    <h1>ao clicar no botão abre um pront onde colocamos uma informação que é inserida no texto que esta abaixo do botão na tela/ isso é feito adicionando essa informação na DOM </h1>
+
+
+    <button onclick= "addom()"> clica que abre um box </button>
+    <section id = "manipular">
+         <p>"fica de olho aqui"</p>
+    </section>
+
+    
+
+<script>
+
+
+function addom() {
+    let preencha = window.prompt('Qual é o seu nome?')
+    let res = window.document.getElementById("manipular")
+    alert(preencha )
+    res.innerHTML = '<p>mudou a DOM' 
+    }
+
+</script>
+
+</body>
+</html>
+
+
