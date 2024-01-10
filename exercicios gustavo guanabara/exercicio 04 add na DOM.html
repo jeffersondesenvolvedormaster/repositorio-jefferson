@@ -22,8 +22,10 @@
 function addom() {
     let preencha = window.prompt('Qual é o seu nome?')
     let res = window.document.getElementById("manipular")
-    alert(preencha )
-    res.innerHTML = '<p>mudou a DOM' 
+    alert(  preencha )
+    res.innerHTML =  "<p>  meu nome é <strong> "  +  preencha  + " </strong> eu mudei a <strong> DOM </strong>"
+        //usei outra forma de concatenar a original não funciona
+        //adicionei strong de formas diferentes
     }
 
 </script>
