@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contador de cliques</title>
+</head>
+
+<body>
+    
+
+    <h1>CONTADOR DE CLIQUES</h1>
+    <h2> Ao clicar no botão adiciona uma unidade a marcação inicial (0) com o operador ++ /soma mais 01/</h2>
+    <h2>para zerar o contador atribuimos o valor null para a frase inserida na dom</h2>
+
+    <button onclick="contar ()"> contar cliques</button>
+    <button onclick="zerar()">aperte para zerar</button>
+
+    <section id="resultado">
+<p>nenhum clique ainda</p>
+    </section>
+
+
+    <script>
+
+        let somar = 0
+        let res = document.getElementById('resultado')
+
+function contar() {somar++
+res.innerHTML = `<p>Até o momento foram efetuados ${somar} cliques </p>`
+}
+
+function zerar(){
+    somar = 0
+    res.innerHTML = `<p> nenhum clique ainda</p>`
+}
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
