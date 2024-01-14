@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculo de media</title>
+</head>
+<body>
+
+    <h1>abaixo vai aparecer algumas frases utilizando dados inseridos no pront e o resultado de uma função que calcula média</h1>
+    <button onclick="media()"> clique para calcular</button>
+
+    <section id="jovem"><p>aqui irão aparecer os resultados...</p></section>
+
+    <script>
+
+function media(){
+
+let nome = window.prompt("nome do aluno")
+let n1 = Number (window.prompt(`qual foi a primeira nota de ${nome} ? `))
+let n2 = Number (window.prompt(`alem de ${n1} qual foi a outra nota de ${nome}? `))
+
+med=(n1+n2)/2
+
+let res = document.getElementById("jovem")
+res.innerHTML = `<p> obtendo a media final de ${nome}...</p>`
+res.innerHTML += `<p> as notas finais de ${nome} são: ${n1} e ... ${n2} !`
+res.innerHTML += `<p> A média final de ${nome} é igual a : ${med} !`
+
+
+
+
+}
+
+    </script>
+    
+</body>
+</html>
