@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soma com pront</title>
+</head>
+<body>
+    <h1>Ao clicar no botão ele executa uma função que abre um pront onde inserimos um numero que será submetido a um metodo dentro da função, nesse caso multiplica e divide, depois vai adicionar o resultado dentro de uma linha de texto para isso maniulando a DOM</h1>
+
+
+    <button onclick="calcular()">clique para abrir um pront e colocar o seu resultado na linha abaixo</button>
+
+
+<section id="res">
+
+    <p>aqui vai mudar de frase quando inserir um dado no pront</p>
+
+
+</section>
+
+    
+<script>
+
+function calcular(){ 
+
+    let n1 = Number(window.prompt('digite um numero:'))
+    
+    let res = document.querySelector('section#res')
+
+
+//abaixo temos uma crase fechando a sentença isso é importante na concatenação usando $
+    res.innerHTML = `<p>"O dobro de" ${n1} "é" ${n1*2} "e a metade é" ${n1/2}</p>`
+
+}
+
+
+
+
+</script>
+
+</body>
+</html>

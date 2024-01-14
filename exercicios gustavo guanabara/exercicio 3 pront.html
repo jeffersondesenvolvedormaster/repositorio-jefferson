@@ -9,16 +9,26 @@
     
 <H1>CRIA UM BOTÃO QUE AO CLICAR DISPARA UMA FUNÇÃO COM DOIS METODOS 1- UM windows.pront QUE ABRE UMA JANELA NO NAVEGADOR COM UM CAMPO PARA DIGITAR E DEPOIS ARMAZENA O DADO DIGITADO EM UMA VARIAVEL... 2-CHAMA UM window.alert QUE TEM UM METODO (obs apenas com parentes pois estão dentro da mesma função usando as mesmas chaves) PEGA A VARIAVEL DIGITADA NO PRONT E CONCATENA COM UM TEXTO PREENCHENDO AS INFORMAÇÕES E DEPOIS APRESENTA UM ALERT NO NAVEGADOR </H1>
 
+<section id="mamao">
 <P>OBS.O SIMBOLO $ É USADO PARA SOMAR OU CONCATENAR O QUE ESTA ENTRE COLCHETES{} </P>
-
+</section>
     <button onclick="jose()"> APERTA EU</button>
 
 <script>
 
+    var jef = "segredos"
+
 function jose() { let gruda = window.prompt("digite seu nome e idade ")
 
 
-window.alert(gruda) 
+window.alert('ola meu nome é ' + gruda + " anos") 
+
+//adicionei abaixo uma muidança de frase na tela através do DOM
+
+var laranja = window.document.getElementById ('mamao')
+
+laranja.innerHTML = "<p>meu nome e idade são:..." + jef
+
 
 
 }
