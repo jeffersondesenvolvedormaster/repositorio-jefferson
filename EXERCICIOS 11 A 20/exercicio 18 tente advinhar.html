@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tente advinhar</title>
+</head>
+<!-- o atributo onload usado no body executa a função no carregamento da pagina-->
+    <body onload="sortear()">
+        <h1>Tente adivinhar meu número</h1>
+        <button onclick="jogar()" id="botao">Tentar adivinhar</button>
+        <button onclick="zerar()" id="botao">denovo</button>
+        <section id="result">
+            <p>Já pensei em um valor entre 1 e 100...</p>
+        </section>
+
+    <script>
+
+let res = document.querySelector('section#result')
+
+function sortear() {
+    let min = 1 // As variáveis declaradas aqui dentro são LOCAIS, e só funcionam dentro da função onde foram declaradas
+    let max = 100
+    let dif = max - min
+    console.log(dif)
+    let aleatorio = Math.random()
+    console.log (aleatorio)
+    computador = min + Math.trunc(dif * aleatorio)
+    console.log (computador)
+}
+
+function jogar() {
+    jogador = Number(window.prompt('Qual é o seu palpite?'))
+    if (jogador < computador) {
+        res.innerHTML += `<p>Você falou ${jogador}. Meu número é <strong>MAIOR</strong>!</p>`
+    } else if (jogador > 99) {
+        res.innerHTML += `<p> digite um valor menor que 100</p>`
+    } else if (jogador > computador) {
+        res.innerHTML += `<p>Você falou ${jogador}. Meu número é <strong>MENOR</strong>!</p>`
+    } else if (jogador == computador) {
+        res.innerHTML += `<p onload''><strong>PARABÉNS!</strong> Você acertou! Eu tinha sorteado o valor ${computador}!</p>`}
+   
+    }
+     //zerar = recarregar pagina com metodo location.reload()
+    function zerar(){location.reload()}
+
+
+
+    </script>
+</body>
+</html>
