@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while e if</title>
+</head>
+<body>
+
+<h1>adiciona um numero a contagem inicial com o loop while restringindo até no maximo 10, sendo que filtra nessa contagem os numeros pares ou impares com um if condiction</h1>
+
+<button onclick="pares()">apresentar até 10 pares ou impares</button>
+
+
+
+<section id="res"><h2>veja o resultado abaixo</h2></section>
+
+<script>
+/* o simbolo (operador) % significa modulo - se o valor que deseja descobrir for par ele é (%2 ===0) se for impar ele é (%2!==0) */
+
+
+
+function pares(){
+    let initial = Number(01)
+    let saida = document.getElementById("res")
+
+    while (initial <=10){
+if (initial %2 ===0) {saida.innerHTML += `os numeros ${initial} são pares`}
+else{saida.innerHTML += `os numeros ${initial} são impares`}
+
+    }
+
+    
+    
+    
+
+
+
+
+}
+
+
+
+</script>
+
+    
+</body>
+</html>

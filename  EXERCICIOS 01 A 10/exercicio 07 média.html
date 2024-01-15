@@ -22,13 +22,24 @@ let n2 = Number (window.prompt(`alem de ${n1} qual foi a outra nota de ${nome}? 
 
 med=(n1+n2)/2
 
+
+
+
 let res = document.getElementById("jovem")
 res.innerHTML = `<p> obtendo a media final de ${nome}...</p>`
 res.innerHTML += `<p> as notas finais de ${nome} são: ${n1} e ... ${n2} !`
 res.innerHTML += `<p> A média final de ${nome} é igual a : ${med} !`
 
+    alert ('clique para calcular')
 
 
+if (med < 5) { mensagem = 'Reprovado'}
+
+else if (med > 5) { mensagem = 'APROVADO'}  
+
+else { mensagem = 'ta bom vai'}
+    
+ window.alert (mensagem)
 
 }
 
