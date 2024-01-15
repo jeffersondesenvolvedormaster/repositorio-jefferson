@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idade x data atual</title>
+</head>
+<body>
+
+        <h1>Calculando a idade</h1>
+        <button onclick="calcidade()">Iniciar</button>
+        <section id="saida">
+            <p>Aqui vai aparecer algo...</p>
+        </section>
+    
+       
+        <script>
+
+            /* para determinar o ano atual pegamos a data completa no sistema usando o objeto new date onde selecionamos apenas o ano com o seletor (getfullyear()) depois usamos operações simples para calcular a idade baseado na informação de ano de nascimento preenchido no prompt - depois manipulamos a DOM concatenando as informações para preencher uma string com as informações.
+            
+            */
+
+function calcidade() {
+    let agora = new Date
+    let ano = agora.getFullYear()
+  
+
+    let nasc = Number(window.prompt('Em que ano você nasceu?'))
+    let idade = ano - nasc
+
+    let saida = document.getElementById('saida')
+    saida.innerHTML = `<p>Quem nasceu em ${nasc} vai completar <strong>${idade}</strong> anos em ${ano}.</p>`
+}
+
+
+
+        </script>
+    
+
+    
+</body>
+</html>
