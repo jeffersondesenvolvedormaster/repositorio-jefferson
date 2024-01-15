@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>while e if</title>
+    <title>while</title>
 </head>
 <body>
 
@@ -19,23 +19,28 @@
 
 
 function pares(){
-    let initial = Number(01)
+   
     let saida = document.getElementById("res")
-
-    while (initial <=10){
-if (initial %2 ===0) {saida.innerHTML += `os numeros ${initial} são pares`}
-else{saida.innerHTML += `os numeros ${initial} são impares`}
-
-    }
-    
     
 
 
+    let initial = 1
+   
+    while (initial <= 10) {
+if (initial % 2 == 0) {saida.innerHTML += `<mark> ${initial} é par...</mark> `
+} else {saida.innerHTML += ` ${initial} é impar mas ... `}
+initial ++
+    
+    }}
+    
+    
+/*initial ++ adiciona 01 a cada loop (while)-  %2==0 verifica se é par - else (caso contrario) é impar...nessa função verificamos a cada volta do laço while se o resultado é par ou caso contrario sabemos que é impar obs o ++ esta no final pois precisa primeiro testar as condiçoes antes de adicionar outro numero*/
 
 
 
 
-/* o simbolo (operador) % significa modulo - se o valor que deseja descobrir for par ele é (%2 ===0) se for impar ele é (%2!==0) */
+
+
 
 
 </script>
