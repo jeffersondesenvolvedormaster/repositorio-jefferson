@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verificar palavras</title>
+</head>
+
+    <body>
+        <h1>Descubra a estação do ano</h1>
+        <button onclick="estação()" id="botao">Informe o mês aqui</button>
+        <section id="saida">
+            <p>Clique no botão acima para informar o mês.</p>
+        </section>
+    
+        <script >
+/* essa função usa o  switch nesse caso vai testar uma informação digitada no pront (sem aparecer as opções digitaveis na informação escrita no pront) apenas deixando uma pergunta onde tem respostas limitadas que serão usadas como case (ou seja caso for digitado isso faça o que esta no metodo) o metodo por sua vez vai incluir uma informação em uma string inserida na DOM informando assim na tela o resultado*/
+function estação() { // Sim, é possível usar acentuação
+    let mês = prompt('Digite o mês em extenso (ex: Setembro)')
+    let saída = document.querySelector('section#saida')
+    let estação
+    switch (mês.toUpperCase()) { // O método toUpperCase() transforma todas as letras de uma string para maiúsculas
+        case 'JANEIRO': case 'FEVEREIRO': case 'MARÇO': case '1': case '2': case '3': // Podemos testar múltiplos casos em uma mesma linha, desse jeito
+            estação = 'INVERNO'
+            break // Nunca se esqueça do break!!!
+        case 'ABRIL': case 'MAIO': case 'JUNHO': case '4': case '5': case '6':
+            estação = 'PRIMAVERA'
+            break
+        case 'JULHO': case 'AGOSTO': case 'SETEMBRO': case '7': case '8': case '9':
+            estação = 'VERÃO'
+            break
+        case 'OUTUBRO': case 'NOVEMBRO': case 'DEZEMBRO': case '10': case '11': case '12':
+            estação = 'OUTONO'
+            break
+        default:
+            estação = 'INDEFINIDA'
+            break
+    }
+    saída.innerHTML = `<p>No mês de <mark>${mês}</mark>, estamos na estação <mark><strong>${estação}</strong></mark>.</p>`
+}
+
+// Sugestão de melhoria: refaça esse programa para que ele aceite tanto o mês por extenso quanto o número do mês.
+
+
+
+        </script>
+    
+    </body>
+
+</html>
