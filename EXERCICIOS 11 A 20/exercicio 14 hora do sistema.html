@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    body {background-color: yellow;}
+    h1{background-color: red;}
+    button{border: solid 2px; border-radius: 5px;}
+    p {text-transform: uppercase;}
+    
+    </style>
+</head>
+<body>
+
+    <h1>Ao clicar no botão o javascript chama uma função do sistema <br> que acrescenta a data a string via manipilação da dom!!!</h1>
+
+    <br>
+
+    <button onclick="hora()">que dia é hoje?</button>
+    <br>
+    <br>
+
+
+    <section id="seta">
+        <p>hoje é :__________________________________</p>
+    </section>
+
+    <script>
+function hora (){
+
+    let hoje = Date()
+    let res = document.getElementById('seta')
+    seta.innerHTML = `<h1>a resposta é:   ${hoje}</h1>`
+}
+
+
+    </script>
+    
+</body>
+</html>
